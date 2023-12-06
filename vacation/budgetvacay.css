@@ -1,0 +1,251 @@
+/*prevents problems with different browser*/
+*{box-sizing: border-box;}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/*header stuff here*/
+header {
+    background-color: #f7f7f7;
+    padding: 1rem 2vw;
+}
+header div {
+    padding-left: 1.5vw;
+}
+header h1 {
+    margin: 0;
+    color: #0059A0;
+}
+header p {
+    margin: 0;
+    color: #0059A0;
+    letter-spacing: .1rem;
+}
+
+/*Nav Stuff here*/
+
+/*Small Screens*/
+@media only screen and (max-width: 890px){
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    
+    }   
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: center;
+        border-bottom: solid .5px #0059A0;
+        color: #0059A0;
+    }
+    nav .active a{
+        background-color: #0059A0;
+        background-image: linear-gradient(to bottom, #348ED7, #0059A0);
+        color: #F2DDB6
+    }
+}
+
+/*wide screens*/
+@media only screen and (min-width: 891px) {
+
+nav {
+    background-color: #0059A0;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav ul li a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #F2DDB6;
+    font-weight: 600;
+    display: block;
+    padding: 1rem 2rem;
+}
+nav li.active a {
+    background-color: #F2DDB6;
+    color: #0059a0
+}
+nav a:hover {
+    color: white;
+}
+
+}
+
+/*main stuff*/
+main {
+    padding: 1rem 2vw; 
+}
+main h1 {
+   color: #732D27; 
+}
+main h2 {
+    color: #0059a0;
+    margin-bottom: .2rem;
+}
+main p {
+    color: #0D0504;
+    margin: 0 0 .5rem 0;
+}
+.wrapped{
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+.wrapped img {
+    width: 100%;
+    height: auto;
+}
+.wrapped figcaption{
+    font-size: .9rem;
+    text-align: center
+}
+/*form stuff*/
+
+.myform fieldset{
+    border: 1px solid #0059a0;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myform legend {
+    color: #732D27;
+    font-size: .85rem   
+}
+.myform label {
+    margin: .5rem;
+}
+.myform label, .myform select, .myform [type=text], .myform textarea, .myform [type=tel] {
+    display: block;
+}
+.myform select, .myform [type=text], .myform textarea, .myform [type=tel] {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+.myform textarea {
+    height: 4rem;
+    width: 370px;
+}
+.myform [type=radio] {
+    border: red;
+    
+}
+.myform :required {
+    background-color: rgba(242, 221, 182, .7);
+}
+.myform [type=submit] {
+    background-color: #0059a0;
+    border: none;
+    padding: .7rem 1.4rem;
+    border-radius: 25px;
+    color: #F2DDB6;
+    margin: 1rem 0 0 1vw;
+    font-weight: 700;
+}
+/*packages*/
+.packeges fieldset{
+    width: 100%;
+    border: 1px solid #F2DDB6;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    background-color: #F2DDB6;
+    
+}
+.packeges dt{
+    margin-top: 1rem
+   
+   
+}
+.packeges dd{
+    
+    font-size: .9rem;
+    
+}
+.packeges a{
+    color: #0059a0;
+}
+.packeges figure {
+    margin: 1rem;
+}
+
+
+.packeges h2{
+    margin-left: 1rem;
+}
+
+
+.packeges figcaption{
+    text-align: left;
+    margin-bottom: 12px;
+    
+    
+}
+.pack{
+    width: 250px;
+    margin: 0;
+    float: left;
+    
+    
+}
+.pack img {
+    width: 100%;
+    height: auto;
+    
+}
+.pack figcaption{
+    font-size: .75rem;
+    text-align: center;
+    font-size: 1rem;
+}
+/*gallery*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery figure {
+    margin: .7rem 6% 0 0;
+}
+.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+}
+.gallery img:hover {
+    box-shadow: 0px 0px 10px #0059a0;
+}
+
+
+/*footer stuff*/
+footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    color: #000;
+    padding: 1rem 0;
+    font-size: .8rem;
+    clear: both;
+}
+footer a {
+    color: #0D0504;
+    
+}
+
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}

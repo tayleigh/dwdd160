@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+    <title>Budget Vacations:Home</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta charset="UTF-8">
+    
+    <meta name="description" content="Budget vacations">
+    
+    <meta name="author" content="Tayleigh Ward">
+    
+    <link rel="stylesheet" href="budgetvacay.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+   
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+        
+          
+</head>
+    
+<body>
+    <!-- Start of the page header -->
+    <header>
+        <h1>Budget Vacation</h1>
+        <p>Exploring Utah the Correct Way</p>
+    </header>
+    <!-- Start of the Page navigation -->
+    <nav>
+        <ul>
+            
+            <li><a href="index.html">Budget Vacation</a></li>
+            <li><a href="gallery.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+        
+        </ul>
+    </nav>
+    <!-- Start of the page Content -->
+    <main>
+
+        <h1>Contact Us</h1>
+            <form method="get" class="myform" action="thanks.html">
+            
+            <fieldset>
+                <label>Which vacation are you looking at 
+                    
+                    <select name="time" required>
+                        <option value="none">Please Select</option>
+                        <option value="arches">Arches</option>
+                        <option value="zion">Zion</option>
+                        <option value="bryce">Bryce Canyon</option>
+                    </select>
+                </label>
+            </fieldset>
+                
+            <fieldset>
+                <legend>Contact Info</legend>
+                    <label>First Name*<input type="text" name="fname" required></label>
+                    <label>Last Name*<input type="text" name="lname" required></label>
+                    <label>Email*<input type="text" name="email" required placeholder="email@email.com"></label>
+                    <label>Phone Number<input type="tel" name="phone" required placeholder="000-000-0000"></label>
+                
+            </fieldset>
+                
+            <fieldset>
+                <legend>What is the best way to contact you?</legend>
+                <label><input type="radio" name="method" value="text">Text</label>
+                <label><input type="radio" name="method" value="call">Call</label>
+                <label><input type="radio" name="method" value="email">Email</label>
+            </fieldset>
+                
+            <fieldset>
+                <legend>What more would you like to see from us?</legend>
+                <label><input type="checkbox" name="giveaway" value="chosen">Vacation Giveaway</label>
+                <label><input type="checkbox" name="deals" value="chosen">Flight Deals</label>
+                <label><input type="checkbox" name="offers" value="chosen">Special Offers</label>
+                <label>Other
+                <textarea name="comments"></textarea>
+                </label>
+            </fieldset>
+                
+            <fieldset>
+                <label>What are your concerns?*
+                    <textarea name="concerns" required></textarea>
+                    
+                </label>
+            </fieldset>
+            <input type="submit" value="Send">
+
+        </form>
+    </main>
+    
+    
+    
+    <footer>
+    <p>&copy;2023 &bull; Tayleigh Ward</p>
+    </footer>
+    </body>
+</html>
